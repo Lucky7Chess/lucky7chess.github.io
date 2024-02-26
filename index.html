@@ -170,6 +170,40 @@
 </tr>
 
 <tr>
+  <td width="33%" valign="top" align="center"><a href="https://dexfunc.github.io/">
+  <video autoplay loop muted src="https://dexfunc.github.io/resources/dexfunc-website-video.mp4" alt="sym" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black" width="90%"></video>
+  </a></td>
+  <td width="67%" valign="top">
+    <p><a href="https://dexfunc.github.io/" id="DEXFUNC">
+    <heading>Dexterous Functional Grasping</heading></a><br>
+    Ananye Agarwal, Shagun Uppal, Kenneth Shaw, Deepak Pathak<br>
+    CoRL 2023
+    </p>
+
+    <div class="paper" id="dexfunc">
+    <a href="https://dexfunc.github.io/">webpage</a> |
+    <a href="javascript:toggleblock('dexfunc-abs')">abstract</a> |
+    <a shape="rect" href="javascript:togglebib('dexfunc')" class="togglebib">bibtex</a> |
+    <a href="https://arxiv.org/abs/2312.02975">arXiv</a> 
+
+    <p align="justify"> <i style="display: none;" id="dexfunc-abs">While there have been significant strides in dexterous manipulation, most of it is limited to benchmark tasks like in-hand reorientation which are of limited utility in the real world. The main benefit of dexterous hands over two-fingered ones is their ability to pickup tools and other objects (including thin ones) and grasp them firmly to apply force. However, this task requires both a complex understanding of functional affordances as well as precise low-level control. While prior work obtains affordances from human data this approach doesn't scale to low-level control. Similarly, simulation training cannot give the robot an understanding of real-world semantics. In this paper, we aim to combine the best of both worlds to accomplish functional grasping for in-the-wild objects. We use a modular approach. First, affordances are obtained by matching corresponding regions of different objects and then a low-level policy trained in sim is run to grasp it. We propose a novel application of eigengrasps to reduce the search space of RL using a small amount of human data and find that it leads to more stable and physically realistic motion. We find that eigengrasp action space beats baselines in simulation and outperforms hardcoded grasping in real and matches or outperforms a trained human teleoperator.</i></p>
+
+<pre xml:space="preserve" style="display:none;">
+@inproceedings{agarwal2023dexterous,
+  title={Dexterous Functional Grasping},
+  author={Agarwal, Ananye and Uppal, Shagun and Shaw, Kenneth and Pathak, Deepak},
+  booktitle={Conference on Robot Learning},
+  pages={3453--3467},
+  year={2023},
+  organization={PMLR}
+}
+</pre>
+    </div>
+  </td>
+</tr>
+
+
+<tr>
   <tr>
     <td width="33%" valign="top" align="center"><a href="https://dash-through-interaction.github.io/">
     <video autoplay loop muted src="https://dash-through-interaction.github.io/resources/task_videos/Grape.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
@@ -178,7 +212,7 @@
       <p><a href="https://dash-through-interaction.github.io/" id="DASH">
       <heading>DASH: A Framework for Designing Anthropomorphic Soft Hands through Interaction</heading></a><br>
       Pragna Mannam*, Kenneth Shaw*, Dominik Bauer, Jean Oh, Deepak Pathak, Nancy Pollard<br>
-      IEEE Humanoids 2023
+      IEEE Humanoids 2023 <b>Best Oral Paper Award Finalist</b>
       </p>
   
       <div class="paper" id="dash">
