@@ -107,15 +107,14 @@
     </p>
     </td>
     <td width="68%" valign="top" align="justify">
-    <p> Hi I'm Kenny.  I'm a 1st year PhD student (as of fall 2023) at the Robotics Institute in Carnegie Mellon University,
+    <p> Hi I'm Kenny.  I'm a 3rd year PhD student (as of fall 2025) at the Robotics Institute in Carnegie Mellon University,
         advised by <a href="https://www.cs.cmu.edu/~dpathak/"> Prof. Deepak Pathak </a>.
         <br>
         <br>
-        My research focuses on anthropomorphic robot hands and dexterous manipulation.  How should robot hands be designed to be dexterous and usable in our daily lives?  How do we teach robot hands to act human-like through imitation of humans such as in videos?  Finally, how do we unlock new dexterous manipulation behavior using simulation and large-scale data?
+        My research centers on anthropomorphic robot hands and dexterous manipulation. How can we design robot hands that are both dexterous and practical for everyday use? How can we teach them to move more like humans by imitating people, for example through videos? And how can we discover new dexterous behaviors using simulation and large-scale data?        <br>
         <br>
+        More broadly, I'm interested in the intersection of robot hardware and data-driven learning. How can we create new robotic systems that use machine learning to enable novel capabilities? And how can learned behaviors help guide the design of future robots?
         <br>
-        More broadly I'm interested in the intersection of hardware and data-driven machine learning for robotic systems.  How can we design new robots that leverage machine learning to have new behaviors?  And how can these data-driven policies inform our robot design?
-
     <p> Previously, I graduated from Georgia Tech in Computer Engineering and worked on multi-agent systems and HRI with Prof. Sonia Chernova and Prof. Harish Ravichandar.
     Please contact me via email at kshaw2 -at- andrew dot cmu dot edu .  I'm always looking for new and interesting collaborations!
     </p>
@@ -139,6 +138,139 @@
 
 
 <tr>
+  <tr>
+    <td width="33%" valign="top" align="center"><a href="https://dexwild.github.io/">
+      <video autoplay loop muted src="./images/dexwild_2.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+    </a></td>
+    <td width="67%" valign="top">
+      <a href="https://dexwild.github.io/">
+        <span class="papertitle"> <heading> DexWild: Dexterous Human Interactions for In-the-Wild Robot Policies </heading></span>
+      </a>
+      <br>
+      Tony Tao*,
+      Mohan Kumar Srirama*,
+      Jason Jingzhou Liu,
+      Kenneth Shaw,
+      Deepak Pathak
+      <br>
+      RSS 2025
+      <br>
+      <br>
+      <!-- <p></p> -->
+      <div class="paper" id="dexwild_tog">
+        <a href="https://dexwild.github.io/">website</a>
+        |
+        <a href="javascript:toggleblock('dexwild_abs')">abstract</a>
+        |
+        <a shape="rect" href="javascript:togglebib('dexwild_tog')" class="togglebib">bibtex</a>
+        |
+        <a href="https://arxiv.org/abs/2505.07813">arXiv</a>
+
+        <p align="justify">
+          <i style="display: none;" id="dexwild_abs">
+            Large-scale, diverse robot datasets have emerged as a promising path toward enabling dexterous
+            manipulation policies
+            to generalize to novel environments, but acquiring such datasets presents many challenges. While
+            teleoperation provides
+            high-fidelity datasets, its high cost limits its scalability. Instead, what if people could use
+            their own hands, just
+            as they do in everyday life, to collect data? In DexWild, a diverse team of data collectors uses
+            their hands to collect
+            hours of interactions across a multitude of environments and objects. To record this data, we
+            create DexWild-System,
+            a low-cost, mobile, and easy-to-use device. The DexWild learning framework co-trains on both
+            human and robot
+            demonstrations, leading to improved performance compared to training on each dataset
+            individually. This combination
+            results in robust robot policies capable of generalizing to novel environments, tasks, and
+            embodiments with minimal
+            additional robot-specific data. Experimental results demonstrate that DexWild significantly
+            improves performance,
+            achieving a 68.5% success rate in unseen environments-nearly four times higher than policies
+            trained with robot data
+            only-and offering 5.8x better cross-embodiment generalization.
+          </i>
+        </p>
+
+        <pre xml:space="preserve" style="display:none;">@article{tao2025dexwild,
+title={DexWild: Dexterous Human Interactions for In-the-Wild Robot Policies},
+author={Tao, Tony and Srirama, Mohan Kumar and Liu, Jason Jingzhou and Shaw, Kenneth and Pathak, Deepak},
+journal={Robotics: Science and Systems (RSS)},
+year={2025},
+}
+</pre>
+      </div>
+      <p></p>
+      <p></p>
+    </td>
+  </tr>
+
+  <tr>
+    <!-- bgcolor="#ffffd0" -->
+    <td width="33%" valign="top" align="center"><a href="https://jasonjzliu.com/factr/">
+      <video autoplay loop muted src="./images/factr.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+    </a></td>
+    <td width="67%" valign="top">
+      <a href="https://jasonjzliu.com/factr/"><heading>
+        <span class="papertitle">FACTR: Force-Attending Curriculum Training
+          for Contact-Rich Policy Learning</span></heading>
+      </a>
+      <br>
+      Jason Jingzhou Liu*,
+      Yulong Li*,
+      Kenneth Shaw,
+      Tony Tao,
+      Ruslan Salakhutdinov,
+      Deepak Pathak
+      <br>
+      <br>
+      RSS 2025
+      <br>
+      <div class="paper" id="factr_tog">
+        <a href="https://jasonjzliu.com/factr/">website</a>
+        |
+        <a href="javascript:toggleblock('factr_abs')">abstract</a>
+        |
+        <a shape="rect" href="javascript:togglebib('factr_tog')" class="togglebib">bibtex</a>
+        |
+        <a href="https://arxiv.org/abs/2502.17432">arXiv</a>
+        |
+        <a href="https://github.com/RaindragonD/factr/">code</a>
+
+        <p align="justify">
+          <i style="display: none;" id="factr_abs">
+            Many contact-rich tasks humans perform, such as box pickup or rolling dough, rely on
+            force feedback for reliable execution. However, this force information, which is readily
+            available in most robot arms, is not commonly used in teleoperation and policy learning.
+            Consequently, robot behavior is often limited to quasi-static kinematic tasks that do not
+            require intricate force-feedback. In this paper, we first present a low-cost, intuitive,
+            bilateral teleoperation setup that relays external forces of the follower arm back to
+            the teacher arm, facilitating data collection for complex, contact-rich tasks. We
+            then introduce FACTR, a policy learning method that employs a curriculum which corrupts
+            the visual input with decreasing intensity throughout training. The curriculum prevents
+            our transformer-based policy from over-fitting to the visual input and guides the policy
+            to properly attend to the force modality. We demonstrate that by fully utilizing the
+            force information, our method significantly improves generalization to unseen objects
+            by 43% compared to baseline approaches without a curriculum.
+          </i>
+        </p>
+
+        <pre xml:space="preserve" style="display:none;">@article{liu2025factr,
+title={FACTR: Force-Attending Curriculum Training for 
+Contact-Rich Policy Learning}, 
+author={Jason Jingzhou Liu and Yulong Li and Kenneth Shaw 
+and Tony Tao and Ruslan Salakhutdinov and Deepak Pathak},
+journal={arXiv preprint arXiv:2502.17432},
+year={2025},
+}
+</pre>
+      </div>
+      <p></p>
+      <p></p>
+    </td>
+  </tr>
+
+
   <tr bgcolor="#ffffd0">
     <td width="33%" valign="top" align="center"><a href="https://bidex-teleop.github.io/">
     <video autoplay loop muted src="https://bidex-teleop.github.io/resources/1/plate2.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
@@ -157,14 +289,14 @@
   
       <p align="justify"> <i style="display: none;" id="bidex_abs">To train generalist robot policies, machine learning methods often require a substantial amount of expert human teleoperation data. An ideal robot for humans collecting data is one that closely mimics them: bimanual arms and dexterous hands. However, creating such a bimanual teleoperation system with over 50 DoF is a significant challenge. To address this, we introduce Bidex, an extremely dexterous, low-cost, low-latency and portable bimanual dexterous teleoperation system which relies on motion capture gloves and teacher arms. We compare Bidex to a Vision Pro teleoperation system and a SteamVR system and find Bidex to produce better quality data for more complex tasks at a faster rate. Additionally, we show Bidex operating a mobile bimanual robot for in the wild tasks. The robot hands (5k USD) and teleoperation system (7k USD) is readily reproducible and can be used on many robot arms including two xArms ($16k USD).</i></p>
   
-  <pre xml:space="preserve" style="display:none;">
-    @inproceedings{shaw2024bimanual,
-      title={Bimanual Dexterity for Complex Tasks},
-      author={Shaw, Kenneth and Li, Yulong and Yang, Jiahui and Srirama, Mohan Kumar and Liu, Ray and Xiong, Haoyu and Mendonca, Russell and Pathak, Deepak},
-      booktitle={8th Annual Conference on Robot Learning},
-      year={2024}
-    }
-  </pre>
+      <pre xml:space="preserve" style="display:none;">
+        @inproceedings{shaw2024bimanual,
+          title={Bimanual Dexterity for Complex Tasks},
+          author={Shaw, Kenneth and Li, Yulong and Yang, Jiahui and Srirama, Mohan Kumar and Liu, Ray and Xiong, Haoyu and Mendonca, Russell and Pathak, Deepak},
+          booktitle={8th Annual Conference on Robot Learning},
+          year={2024}
+        }
+      </pre>
       </div>
     </td>
 </tr>
@@ -483,7 +615,7 @@
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="2">
     <tr><td><br><p align="right"><font size="1.5">
-    Modified version of template from <a href="http://www.cs.berkeley.edu/~barron/">here</a>
+    Modified version of template from <a href="http://www.cs.berkeley.edu/~barron/">here</a> and <a href="https://www.cs.cmu.edu/~dpathak/">here</a>
     </font></p></td></tr>
 </table>
 
