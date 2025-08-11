@@ -1,7 +1,7 @@
 Bio:
 Kenneth Shaw is a Ph.D. student in the Robotics Institute at Carnegie Mellon University. He earned his Bachelor's degree in Electrical and Computer Engineering from Georgia Tech and is a recipient of the NSF Graduate Research Fellowship.
 
-His research centers on dexterous manipulation, spanning both hardware development and learning algorithms. He has designed and built several low-cost, highly dexterous robotic hands aimed at making manipulation research and education more accessible. On the AI side, he develops highly dexterous control policies by leveraging human demonstrations from internet videos, teleoperation, and simulation.
+His research centers on dexterous manipulation, spanning both hardware development and learning algorithms. He has designed and built several low-cost, highly dexterous robotic hands aimed at making manipulation research and education more accessible. He uses these hands to develop highly dexterous control policies that leverage human demonstrations from internet videos, teleoperation, and simulation.
 
 His work has been recognized as a Best Oral Paper Award Finalist at IEEE Humanoids 2023, on the cover of the IJRR RSS special issue, and as a Best Paper Award Finalist at the Scaling Robot Learning Workshop.  For further details, visit: https://www.kennyshaw.net
 
