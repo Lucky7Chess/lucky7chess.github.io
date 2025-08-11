@@ -1,0 +1,13 @@
+Bio:
+Kenneth Shaw is a Ph.D. student in the Robotics Institute at Carnegie Mellon University. He earned his Bachelor's degree in Electrical and Computer Engineering from Georgia Tech and is a recipient of the NSF Graduate Research Fellowship.
+
+His research centers on dexterous manipulation, spanning both hardware development and learning algorithms. He has designed and built several low-cost, highly dexterous robotic hands aimed at making manipulation research and education more accessible. On the AI side, he develops highly dexterous control policies by leveraging human demonstrations from internet videos, teleoperation, and simulation.
+
+His work has been recognized as a Best Oral Paper Award Finalist at IEEE Humanoids 2023, on the cover of the IJRR RSS special issue, and as a Best Paper Award Finalist at the Scaling Robot Learning Workshop.  For further details, visit: https://www.kennyshaw.net
+
+Talk Abstract:
+
+Think about typing on a keyboard, using chopsticks, or hammering a nail—our hands allow us to interact with the world with remarkable precision and adaptability. In contrast, robotic manipulation is still largely limited to basic grippers and suction cups that lack this level of dexterity. A key reason is that truly dexterous robot hands are notoriously difficult to build and control.
+
+In this talk, I’ll share our work on democratizing access to dexterity through robot hands such as our LEAP Hands—low-cost, highly capable hardware and software packages designed for research and education. I’ll also discuss how we use large-scale human motion data from the internet and modern simulation techniques to enable our robot hands to learn complex, human-like behavior.
+
