@@ -102,20 +102,19 @@
     <p align=center>
     <a href="./files/cv.pdf">CV</a> |
     <a href="https://scholar.google.com/citations?user=T3yF9yWrz2UC&hl=en&oi=sra">Google Scholar</a>  |
-    <!-- <a href="https://github.com/russellmendonca">Github</a> | --><br>
     <a href="https://twitter.com/kenny__shaw">Twitter</a> | 
     <a href="./files/talk.txt">Formal Bio</a> | 
     <br/>
     </p>
     </td>
     <td width="68%" valign="top" align="justify">
-    <p> Hi I'm Kenny.  I'm a 3rd year PhD student (as of fall 2025) at the Robotics Institute in Carnegie Mellon University,
+    <p> Hi I'm Kenny.  I'm a final year PhD student at the Robotics Institute in Carnegie Mellon University,
         advised by <a href="https://www.cs.cmu.edu/~dpathak/"> Prof. Deepak Pathak </a>.
         <br>
         <br>
         <!-- Think about typing on a keyboard, using chopsticks, or hammering a nail—our hands allow us to interact with the world with remarkable precision and adaptability. In contrast, robotic manipulation is still largely limited to basic grippers. A key reason is that truly dexterous robot hands are notoriously difficult to build and control. -->
         <!-- <br><br> -->
-        My reserach centers on dexterous manipulation.  I have designed several low-cost, highly capable dexterous robotic hands aimed at making manipulation research and education more accessible. I develop highly dexterous control policies for these hands by leveraging human demonstrations from internet videos, teleoperation, and simulation.
+        My reserach centers on dexterous manipulation.  I have designed several low-cost, highly capable dexterous robotic hands aimed at making manipulation research and education more accessible. I develop highly dexterous AI policies for these hands by leveraging human demonstrations from internet videos, teleoperation, and simulation.
         <br><br>
         More broadly, I'm interested in how can we create new democratized robotic hardware systems with unlocked capabillities from machine learning. How does the design of a robot's hardware shape the way it learns—and how does the learning influence how the hardware should be designed?
         <br>
@@ -133,11 +132,151 @@
 
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-  <tr><td><sectionheading>&nbsp;&nbsp;Recent Publications</sectionheading></td></tr>
+  <tr><td><sectionheading>&nbsp;&nbsp;Publications</sectionheading></td></tr>
 </table>
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 <br/>
 
+   <tr>
+                <td width="33%" valign="top" align="center">
+    <img src="./images/ifg.png" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black;">
+</td>
+                <td width="67%" valign="top">
+                  <a href="https://ifgrasping.github.io/">
+                    <heading>IFG: Internet-Scale Functional Grasping</heading>
+                  </a>
+                  <br>
+                  Ray Muxin Liu*, 
+                  Mingxuan Li*,
+                  Kenneth Shaw,
+                  Deepak Pathak
+                  <br>
+                  <br>
+                  In Submission 
+                  <br>
+                  <!-- <p></p> -->
+                  <div class="paper" id="ifg_tog">
+                    <a href="https://ifgrasping.github.io/">website</a>
+                    |
+                    <a href="javascript:toggleblock('ifg_abs')">abstract</a>
+                    |
+                    <a shape="rect" href="javascript:togglebib('ifg_tog')" class="togglebib">bibtex</a>
+                    |
+                    <a href="">arXiv</a>
+                    <!-- |
+                    <a href="TBD">code</a> -->
+
+                    <p align="justify">
+                      <i style="display: none;" id="ifg_abs">
+                        Large Vision Models trained on internet-scale data have demonstrated strong capabilities in segmenting and semantically understanding object parts, even in cluttered, crowded scenes. However, while these models can direct a robot toward the general region of an object, they lack the geometric understanding required to precisely control dexterous robotic hands for 3D grasping. To overcome this, our key insight is to leverage simulation with a force-closure grasp generation pipeline that captures local hand–object geometries. Because this pipeline is computationally slow and requires ground-truth observations, the resulting data is distilled into a diffusion model that operates in real time on camera point clouds. By combining the global semantic understanding of internet-scale models with the geometric precision of simulation-based local grasp optimization, IFG achieves high-performance functional grasping without any manually collected training data.
+                      </i>
+                    </p>
+
+                    <pre xml:space="preserve" style="display:none;">
+                      In Submission
+          </pre>
+                  </div>
+                  <p></p>
+                  <p></p>
+                </td>
+              </tr>
+
+
+
+              <tr>
+                <td width="33%" valign="top" align="center">
+                    <video autoplay loop muted src="./images/drp.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>                   
+                </td>
+                <td width="67%" valign="top">
+                  <a href="https://drp-impact.github.io/">
+                    <heading>Deep Reactive Policy: Learning Reactive Manipulator Motion Planning for Dynamic Environments</heading>
+                  </a>
+                  <br>
+                  Jiahui Yang*,
+                  Jason Jingzhou Liu*,
+                  Yulong Li,
+                  Youssef Khaky,
+                  Kenneth Shaw,
+                  Deepak Pathak
+                  <br>
+                  <br>
+                  CoRL 2025 
+                  <br>
+                  <!-- <p></p> -->
+                  <div class="paper" id="drp_tog">
+                    <a href="https://drp-impact.github.io/">website</a>
+                    |
+                    <a href="javascript:toggleblock('drp_abs')">abstract</a>
+                    |
+                    <a shape="rect" href="javascript:togglebib('drp_tog')" class="togglebib">bibtex</a>
+                    |
+                    <a href="https://arxiv.org/abs/2509.06953">arXiv</a>
+                    <!-- |
+                    <a href="TBD">code</a> -->
+
+                    <p align="justify">
+                      <i style="display: none;" id="drp_abs">
+                        Generating collision-free motion in dynamic, partially observable environments is a fundamental challenge 
+                        for robotic manipulators. Classical motion planners can compute globally optimal trajectories but require 
+                        full environment knowledge and are typically too slow for dynamic scenes. Neural motion policies offer a 
+                        promising alternative by operating in closed-loop directly on raw sensory inputs but often struggle to generalize 
+                        in complex or dynamic settings. We propose Deep Reactive Policy (DRP), a visuo-motor neural motion policy designed 
+                        for reactive motion generation in diverse dynamic environments, operating directly on point cloud sensory input. 
+                        At its core is IMPACT, a transformer-based neural motion policy pretrained on 10 million generated expert trajectories
+                         across diverse simulation scenarios. We further improve IMPACT's static obstacle avoidance through iterative 
+                         student-teacher finetuning. We additionally enhance the policy's dynamic obstacle avoidance at inference time 
+                         using DCP-RMP, a locally reactive goal-proposal module. We evaluate DRP on challenging tasks featuring cluttered 
+                         scenes, dynamic moving obstacles, and goal obstructions. DRP achieves strong generalization, outperforming prior 
+                         classical and neural methods in success rate across both simulated and real-world settings. We will release the 
+                         dataset, simulation environments, and trained models upon acceptance.
+                      </i>
+                    </p>
+
+                    <pre xml:space="preserve" style="display:none;">
+@article{yang2025deep,
+title={Deep Reactive Policy: Learning Reactive Manipulator 
+Motion Planning for Dynamic Environments},
+author={Jiahui Yang and Jason Jingzhou Liu and 
+Yulong Li and Youssef Khaky and Deepak Pathak},
+journal={9th Annual Conference on Robot Learning},
+year={2025},
+}
+          </pre>
+                  </div>
+                  <p></p>
+                  <p></p>
+                </td>
+              </tr>
+
+  <tr>
+    <td width="33%" valign="top" align="center"><a href="https://v2-adv.leaphand.com/">
+    <video autoplay loop muted src="./images/leapv2_palm.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+    </a></td>
+    <td width="67%" valign="top">
+      <p><a href="https://v2-adv.leaphand.com/" id="V2-adv">
+      <heading>LEAP Hand V2 Advanced: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning</heading></a><br>
+      Kenneth Shaw, Deepak Pathak<br>
+      IEEE Humanoids 2025
+      </p>
+      <div class="paper" id="v2-adv">
+      <a href="https://v2-adv.leaphand.com/">webpage</a> |
+      <a href="javascript:toggleblock('v2-adv_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('v2-adv')" class="togglebib">bibtex</a> |
+      <a href="https://ieeexplore.ieee.org/abstract/document/11203038">IEEE Humanoids</a>
+  
+      <p align="justify"> <i style="display: none;" id="v2-adv_abs">The human hand is a remarkable feat of biology, with the ability to handle intricate tools with great precision and strength yet softly handle delicate objects. Robot hands attempting to emulate this have often fallen into one of two categories: soft or rigid. Soft hands, while compliant and yielding lack the precision and strength of human hands. Conversely, rigid hands are brittle to bumps and do not conform naturally to their environment. We call our solution LEAP Hand v2 Adv, a dexterous, $ 3000, simple anthropomorphic hybrid rigid-soft hand that bridges this gap. First, it achieves a balance of human-hand-like softness and stiffness via a 3d printed soft exterior combined with a 3d printed internal bone structure. Next, LEAP Hand v2 Adv incorporates two powered articulations in the foldable palm: one spanning the four fingers and another near the thumb-mimicking the essential palm flexibility for humanlike grasping. Lastly, LEAP Hand v2 Adv boasts a dexterous Metacarpophalangeal (MCP) kinematic structure, making it highly human-like, easy to assemble, and versatile. Through thorough real-world experiments, we show that LEAP Hand v2 Adv exceeds the capabilities of many existing robot hands for grasping, teleoperated control, and imitation learning. We release 3D printer files and assembly instructions for the dexterous hand research community to use on <a href="https://v2-adv.leaphand.com/">our website.</a></p></i>
+  
+      <pre xml:space="preserve" style="display:none;">   
+        @inproceedings{shaw2025leapv2adv,
+          title={LEAP Hand V2 Advanced: Dexterous, Low-cost Hybrid Rigid-Soft Hand for Robot Learning},
+          author={Shaw, Kenneth and Pathak, Deepak},
+          booktitle={2025 IEEE-RAS International Conference on Humanoid Robots (Humanoids)},
+          year={2025}
+        }
+      </pre>
+      </div>
+    </td>
+</tr>
 
 
 <tr>
@@ -152,6 +291,7 @@
       Tony Tao*, Mohan Kumar Srirama*, Jason Jingzhou Liu, Kenneth Shaw, Deepak Pathak<br>
       RSS 2025
       </p>
+      <span style="color: red; font-weight: bold;">Best Paper Award at EgoAct Workshop 2025</span><br>
       <div class="paper" id="dexwild_tog">
         <a href="https://dexwild.github.io/">website</a>
         |
@@ -162,28 +302,7 @@
         <a href="https://arxiv.org/abs/2505.07813">arXiv</a>
 
         <p align="justify">
-          <i style="display: none;" id="dexwild_abs">
-            Large-scale, diverse robot datasets have emerged as a promising path toward enabling dexterous
-            manipulation policies
-            to generalize to novel environments, but acquiring such datasets presents many challenges. While
-            teleoperation provides
-            high-fidelity datasets, its high cost limits its scalability. Instead, what if people could use
-            their own hands, just
-            as they do in everyday life, to collect data? In DexWild, a diverse team of data collectors uses
-            their hands to collect
-            hours of interactions across a multitude of environments and objects. To record this data, we
-            create DexWild-System,
-            a low-cost, mobile, and easy-to-use device. The DexWild learning framework co-trains on both
-            human and robot
-            demonstrations, leading to improved performance compared to training on each dataset
-            individually. This combination
-            results in robust robot policies capable of generalizing to novel environments, tasks, and
-            embodiments with minimal
-            additional robot-specific data. Experimental results demonstrate that DexWild significantly
-            improves performance,
-            achieving a 68.5% success rate in unseen environments-nearly four times higher than policies
-            trained with robot data
-            only-and offering 5.8x better cross-embodiment generalization.
+          <i style="display: none;" id="dexwild_abs"> Large-scale, diverse robot datasets have emerged as a promising path toward enabling dexterous manipulation policies to generalize to novel environments, but acquiring such datasets presents many challenges. While teleoperation provides high-fidelity datasets, its high cost limits its scalability. Instead, what if people could use their own hands, just as they do in everyday life, to collect data? In DexWild, a diverse team of data collectors uses their hands to collect hours of interactions across a multitude of environments and objects. To record this data, we create DexWild-System, a low-cost, mobile, and easy-to-use device. The DexWild learning framework co-trains on both human and robot demonstrations, leading to improved performance compared to training on each dataset individually. This combination results in robust robot policies capable of generalizing to novel environments, tasks, and embodiments with minimal additional robot-specific data. Experimental results demonstrate that DexWild significantly improves performance, achieving a 68.5% success rate in unseen environments-nearly four times higher than policies trained with robot data only-and offering 5.8x better cross-embodiment generalization.
           </i>
         </p>
 
@@ -221,20 +340,7 @@ year={2025},
         <a href="https://github.com/RaindragonD/factr/">code</a>
 
         <p align="justify">
-          <i style="display: none;" id="factr_abs">
-            Many contact-rich tasks humans perform, such as box pickup or rolling dough, rely on
-            force feedback for reliable execution. However, this force information, which is readily
-            available in most robot arms, is not commonly used in teleoperation and policy learning.
-            Consequently, robot behavior is often limited to quasi-static kinematic tasks that do not
-            require intricate force-feedback. In this paper, we first present a low-cost, intuitive,
-            bilateral teleoperation setup that relays external forces of the follower arm back to
-            the teacher arm, facilitating data collection for complex, contact-rich tasks. We
-            then introduce FACTR, a policy learning method that employs a curriculum which corrupts
-            the visual input with decreasing intensity throughout training. The curriculum prevents
-            our transformer-based policy from over-fitting to the visual input and guides the policy
-            to properly attend to the force modality. We demonstrate that by fully utilizing the
-            force information, our method significantly improves generalization to unseen objects
-            by 43% compared to baseline approaches without a curriculum.
+          <i style="display: none;" id="factr_abs"> Many contact-rich tasks humans perform, such as box pickup or rolling dough, rely on force feedback for reliable execution. However, this force information, which is readily available in most robot arms, is not commonly used in teleoperation and policy learning. Consequently, robot behavior is often limited to quasi-static kinematic tasks that do not require intricate force-feedback. In this paper, we first present a low-cost, intuitive, bilateral teleoperation setup that relays external forces of the follower arm back to the teacher arm, facilitating data collection for complex, contact-rich tasks. We then introduce FACTR, a policy learning method that employs a curriculum which corrupts the visual input with decreasing intensity throughout training. The curriculum prevents our transformer-based policy from over-fitting to the visual input and guides the policy to properly attend to the force modality. We demonstrate that by fully utilizing the force information, our method significantly improves generalization to unseen objects by 43% compared to baseline approaches without a curriculum.
           </i>
         </p>
 
@@ -253,10 +359,40 @@ year={2025},
     </td>
   </tr>
 
+  <tr>
+    <td width="33%" valign="top" align="center"><a href="https://v2.leaphand.com/">
+    <video autoplay loop muted src="https://v2.leaphand.com/static/videos/video_segments/pinch.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+    </a></td>
+    <td width="67%" valign="top">
+      <p><a href="https://v2.leaphand.com/" id="V2">
+      <heading>Demonstrating LEAP Hand v2: Low-Cost, Easy-to-Assemble, High-Performance Hand for Robot Learning</heading></a><br>
+      Kenneth Shaw, Deepak Pathak<br>
+      RSS 2025
+      </p>
+      <div class="paper" id="v2">
+      <a href="https://v2.leaphand.com/">webpage</a> |
+      <a href="javascript:toggleblock('v2_abs')">abstract</a> |
+      <a shape="rect" href="javascript:togglebib('v2-adv')" class="togglebib">bibtex</a> |
+      <a href="https://www.roboticsproceedings.org/rss21/p132.pdf">RSS</a>
+  
+      <p align="justify"> <i style="display: none;" id="v2_abs">Replicating human-like dexterity in robotic hands has been a long-standing challenge in robotics. Recently, with the rise of robot learning and humanoids, the demand for dexterous robot hands to be reliable, affordable, and easy to reproduce has grown significantly. To address these needs, we present LEAP Hand v2, a $200 8-DOF highly dexterous robotic hand designed for robot learning research. It is strong yet compliant, using a hybrid rigid-soft structure that is very durable. Its universal dexterous MCP joint provides exceptional finger mobility, enabling a variety of different grasps. The parts are all 3D printed and can be assembled very easily in under two hours using our instructions. Importantly, we offer a suite of advanced opensource software tools to support robot learning research. This includes human video retargeting code from MANO and Vision Pro, motion capture teleoperation code using the Manus Glove, and a URDF with simulation examples for various simulation engines. We will showcase LEAP Hand v2—designed specifically for this demonstration—alongside our previous robot hands with real robot interactive demos. Following our successful demos at RSS 2023 and 2024, we will again offer an engaging opportunity for attendees to get hands-on experience and information about the accessibility of low-cost, open-source robotic hands.</a></p></i>
+  
+      <pre xml:space="preserve" style="display:none;">   
+        @inproceedings{shaw2025leapv2,
+          title={Demonstrating LEAP Hand v2: Low-Cost, Easy-to-Assemble, High-Performance Hand for Robot Learning},
+          author={Shaw, Kenneth and Pathak, Deepak},
+          booktitle={2025 Robotics: Science and Systems},
+          year={2025}
+        }
+      </pre>
+      </div>
+    </td>
+</tr>
+
 
   <tr bgcolor="#ffffd0">
     <td width="33%" valign="top" align="center"><a href="https://bidex-teleop.github.io/">
-    <video autoplay loop muted src="https://bidex-teleop.github.io/resources/1/plate2.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+    <video autoplay loop muted src="./images/plate.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
     </a></td>
     <td width="67%" valign="top">
       <p><a href="https://bidex-teleop.github.io/" id="Bidex">
@@ -272,7 +408,7 @@ year={2025},
   
       <p align="justify"> <i style="display: none;" id="bidex_abs">To train generalist robot policies, machine learning methods often require a substantial amount of expert human teleoperation data. An ideal robot for humans collecting data is one that closely mimics them: bimanual arms and dexterous hands. However, creating such a bimanual teleoperation system with over 50 DoF is a significant challenge. To address this, we introduce Bidex, an extremely dexterous, low-cost, low-latency and portable bimanual dexterous teleoperation system which relies on motion capture gloves and teacher arms. We compare Bidex to a Vision Pro teleoperation system and a SteamVR system and find Bidex to produce better quality data for more complex tasks at a faster rate. Additionally, we show Bidex operating a mobile bimanual robot for in the wild tasks. The robot hands (5k USD) and teleoperation system (7k USD) is readily reproducible and can be used on many robot arms including two xArms ($16k USD).</i></p>
   
-      <pre xml:space="preserve" style="display:none;">
+      <pre xml:space="preserve" style="display:none;">   
         @inproceedings{shaw2024bimanual,
           title={Bimanual Dexterity for Complex Tasks},
           author={Shaw, Kenneth and Li, Yulong and Yang, Jiahui and Srirama, Mohan Kumar and Liu, Ray and Xiong, Haoyu and Mendonca, Russell and Pathak, Deepak},
@@ -326,7 +462,7 @@ year={2025},
       <p><a href="https://spin-robot.github.io/" id="SPIN">
       <heading>SPIN: Simultaneous Perception Interaction and Navigation</heading></a><br>
       Shagun Uppal, Ananye Agarwal, Haoyu Xiong, Kenneth Shaw, Deepak Pathak<br>
-      CVPR 2024
+      CVPR 2024 <strong>(Oral)</strong>
       </p>
   
       <div class="paper" id="spin">
@@ -351,12 +487,10 @@ year={2025},
     </td>
 </tr>
 
-
-
 <tr>
   <tr>
     <td width="33%" valign="top" align="center"><a href="https://dexterous-finetuning.github.io/">
-    <video autoplay loop muted src="https://dexterous-finetuning.github.io/static/videos/pour_cup.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+    <video autoplay loop muted src="./images/pour_cup.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
     </a></td>
     <td width="67%" valign="top">
       <p><a href="https://dexterous-finetuning.github.io/" id="DEFT">
@@ -387,7 +521,7 @@ year={2025},
 
 <tr>
   <td width="33%" valign="top" align="center"><a href="https://dexfunc.github.io/">
-  <video autoplay loop muted src="https://dexfunc.github.io/resources/dexfunc-website-video.mp4" alt="sym" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black" width="90%"></video>
+  <video autoplay loop muted src="./images/dexfunc-website-video.mp4" alt="sym" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black" width="90%"></video>
   </a></td>
   <td width="67%" valign="top">
     <p><a href="https://dexfunc.github.io/" id="DEXFUNC">
@@ -422,13 +556,13 @@ year={2025},
 <tr>
   <tr>
     <td width="33%" valign="top" align="center"><a href="https://dash-through-interaction.github.io/">
-    <video autoplay loop muted src="https://dash-through-interaction.github.io/resources/task_videos/Grape.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+    <video autoplay loop muted src="images/grape.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
     </a></td>
     <td width="67%" valign="top">
       <p><a href="https://dash-through-interaction.github.io/" id="DASH">
       <heading>DASH: A Framework for Designing Anthropomorphic Soft Hands through Interaction</heading></a><br>
       Pragna Mannam*, Kenneth Shaw*, Dominik Bauer, Jean Oh, Deepak Pathak, Nancy Pollard<br>
-      IEEE Humanoids 2023 <b>Best Oral Paper Award Finalist</b>
+      IEEE Humanoids 2023 <b>Best Oral Paper Award Finalist (Top 3)</b>
       </p>
   
       <div class="paper" id="dash">
@@ -491,12 +625,13 @@ year={2025},
 
 <tr>
   <td width="33%" valign="top" align="center"><a href="https://video-dex.github.io">
-  <video autoplay loop muted src="https://video-dex.github.io/resources/internet.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
+  <video autoplay loop muted src="./images/internet.mp4" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;border:1px solid black"></video>
   </a></td>
   <td width="67%" valign="top">
     <heading>Learning Dexterity from Human Hand Motion in Internet Videos</heading></a><br>
     Kenneth Shaw*, Shikhar Bahl*, Aravind Sivakumar, Aditya Kannan, Deepak Pathak<br>
-    IJRR 2022 Special Issue
+    IJRR Special Issue<br>
+    <span style="font-weight: bold;">Featured on the front page of <a href = "https://journals.sagepub.com/loi/ijra/group/d2020.y2024">IJRR Special Issue April 2024</a></span><br>
     </p>
     <div class="paper" id="ijrr_human">
     <a href="javascript:toggleblock('ijrr_human_abs')">abstract</a> |
@@ -595,6 +730,29 @@ year={2025},
 
 </table>
 <hr/>
+
+<section id="demos" style="text-align: center; padding: 40px 20px;">
+  <h2 style="font-size: 2rem; margin-bottom: 20px;">Demos</h2>
+  <p style="font-size: 1rem; max-width: 700px; margin: 0 auto 20px;">
+Come meet me at CoRL, ICRA and RSS! I have attended CoRL 2023, 2024 and 2025, RSS 2023, 2024 and 2025, and ICRA 2025, and I plan to attend many more. I would love to chat with you, and you can even try out the robot hands yourself!  </p>
+</section>
+
+<section id="education-outreach" style="background-color: #f9f9f9; text-align: center; padding: 40px 20px;">
+  <h2 style="font-size: 2rem; margin-bottom: 20px;">Education & Outreach</h2>
+  <p style="font-size: 1rem; max-width: 700px; margin: 0 auto 20px;">
+    I am deeply committed to supporting educational use of low-cost robot hands, from university labs to K-12 classrooms. My goal is to inspire curiosity, teach core robotics and machine learning skills, and make hands-on research accessible to everyone.  
+    Please reach out if you need additional resources or support beyond what's available on our website.  I'd love to help!
+  </p>
+</section>
+
+<footer style="text-align: center; font-size: 12px; color: #555; padding: 20px;">
+  Modified version of template from 
+  <a href="http://www.cs.berkeley.edu/~barron/">Berkeley</a> and 
+  <a href="https://www.cs.cmu.edu/~dpathak/">CMU Pathak Lab</a>.
+</footer>
+
+
+
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="2">
     <tr><td><br><p align="right"><font size="1.5">
